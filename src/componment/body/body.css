@@ -1,0 +1,261 @@
+#task,body{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    overflow: hidden;
+    box-sizing: border-box;
+    
+}
+
+
+
+#body {
+    display: flex;               /* Make #body a flex container */
+    flex-direction: column;      /* Arrange items in a column */
+    align-items: center;         /* Center items horizontally */
+    justify-content: center;     /* Center items vertically */
+    /* border: 2px solid red; */
+    height: 100vh;
+    background-color: antiquewhite;
+    box-sizing: border-box;
+}
+
+
+#task_generator{
+    /* border:2px solid yellow; */
+    margin-top: 1px;
+    background-color: rgb(252, 204, 146);
+    padding:2%;
+    width:100%;
+
+    display: flex;
+     /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+    justify-content: center;
+}
+
+#task_list{
+    /* border:2px solid yellowgreen; */
+    background-color: rgba(247, 223, 192, 0.804);
+    height:96%;
+    width:60%;
+    align-items: center;
+    padding:0%;
+    overflow-y: auto;
+    
+    
+}
+
+#task_list {
+    /* Remove border */
+    /* border:2px solid yellowgreen; */
+    background-color: rgba(247, 223, 192, 0.804);
+    height: 100vh; /* Adjusted height */
+    width: 60%;
+    padding: 0;
+    overflow-y: auto;
+}
+
+
+#task{
+    /* border: 2px solid brown; */
+    border-radius: 10px;
+    margin:1%;
+    padding:1%;
+}
+
+#task_name_input,#task_description_input,#task_generator_button{
+    /* border: 2px solid black; */
+    margin:0.5%;
+}
+
+#task_name_input{
+    width:12%;
+    height:7vh;
+    border-radius: 5px;
+    padding:1%;
+}
+
+#task_description_input{
+    width:32%;
+    height:7vh;
+    border-radius: 5px;
+    padding:1%;
+}
+
+#task_generator_button{
+    width:3%;
+    height:7vh;
+    border-radius: 50%;
+    font-weight: bolder;
+    font-size: larger;
+    cursor: pointer;
+}
+
+#task_generator_button {
+    width: 50px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    border-radius: 50%; /* Circular shape */
+    font-weight: bold;
+    font-size: larger;
+    cursor: pointer;
+    background: linear-gradient(135deg, #72edf2, #5151e5); /* Gradient background */
+    color: white;
+    border: none; /* Remove border */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    display: flex; /* Center content */
+    align-items: center; /* Center content */
+    justify-content: center; /* Center content */
+}
+
+#task_generator_button:hover {
+    background: linear-gradient(135deg, #5151e5, #72edf2); /* Reverse gradient on hover */
+    transform: scale(1.1); /* Slightly enlarge button on hover */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+#task_generator_button:active {
+    transform: scale(0.95); /* Slightly shrink button on click */
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+}
+
+
+
+
+
+#task{
+    /* border:2px solid goldenrod; */
+    padding:1%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    height:auto;
+}
+
+
+
+
+.task_list {
+    /* Remove border */
+    /* border:2px solid yellowgreen; */
+    background-color: rgba(252, 243, 232, 0.804);
+    height: 90%; /* Adjusted height */
+    width: 60%;
+    padding: 1% 1% 5% 1%; /* Added padding to ensure the last task is visible */
+    margin: 0;
+    overflow-y: auto;
+    /* Custom scrollbar styles */
+    scrollbar-width: auto; /* For Firefox */
+    scrollbar-color: #888 rgba(0, 0, 0, 0); /* Thumb and transparent track */
+    justify-content: center;
+}
+
+.task_list::-webkit-scrollbar {
+    width: 12px; /* Increased width for better visibility */
+}
+
+.task_list::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0); /* Transparent track background */
+    border-radius: 10px; /* Rounded track corners */
+}
+
+.task_list::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px; /* Rounded thumb corners */
+    border: 3px solid rgba(0, 0, 0, 0); /* Transparent border to add space around the thumb */
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.task_list::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    transform: scale(1.1); /* Slightly enlarge thumb on hover */
+}
+
+
+#task {
+    /* Removed border */
+    /* border:2px solid goldenrod; */
+    padding: 1%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    height: auto;
+    margin-bottom: 10px; /* Added margin to avoid clipping the last task */
+}
+
+
+
+#task_name,#task_description,#delete_btn{
+    /* border:2px solid black; */
+    margin:1%;
+}
+
+
+
+#task_name{
+    width:35%;
+    height:7vh;
+    border-radius: 5px;
+    padding:1%;
+    word-wrap: break-word; 
+    font-size: medium;
+    height:auto;
+    max-height: 1.5in; /* Set max height to 1.5 inches */
+    overflow-y: auto; 
+}
+
+#task_description{
+    width:30%;
+    height:7vh;
+    border-radius: 5px;
+    padding:1%;
+    word-wrap: break-word; 
+    width: 100%; 
+    max-width: 500px; 
+    word-wrap: break-word;
+    height:auto;
+    max-height: 1.5in; /* Set max height to 1.5 inches */
+    overflow-y: auto; 
+
+}
+
+
+
+#delete_btn {
+    width: 50px; /* Fixed width */
+    height: 35px; /* Fixed height */
+    border-radius: 50%; /* Circular shape */
+    font-weight: bold;
+    font-size: larger;
+    background: linear-gradient(135deg, #ff6b6b, #e94e77); /* Gradient background */
+    color: white;
+    border: none; /* Remove border */
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    display: flex; /* Center content */
+    align-items: center; /* Center content */
+    justify-content: center; /* Center content */
+}
+
+#delete_btn:hover {
+    background: linear-gradient(135deg, #e94e77, #ff6b6b); /* Reverse gradient on hover */
+    transform: scale(1.1); /* Slightly enlarge button on hover */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+#delete_btn:active {
+    transform: scale(0.95); /* Slightly shrink button on click */
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+}
+
+#no_task_left_h{
+    border: 2px soild black;
+    align-items: center;
+    /* background-color: #ff4c4c; */
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 3000;
+    font-size: larger;
+    
+}
