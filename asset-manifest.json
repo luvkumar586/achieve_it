@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/achieve_it/static/css/main.250310cb.css",
+    "main.js": "/achieve_it/static/js/main.47d8d0f5.js",
+    "index.html": "/achieve_it/index.html",
+    "main.250310cb.css.map": "/achieve_it/static/css/main.250310cb.css.map",
+    "main.47d8d0f5.js.map": "/achieve_it/static/js/main.47d8d0f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.250310cb.css",
+    "static/js/main.47d8d0f5.js"
+  ]
+}
